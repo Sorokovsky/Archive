@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Artchive")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67b0d787d7253bcf128372be248d75a1b6f08623")]
 [assembly: System.Reflection.AssemblyProductAttribute("Artchive")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Artchive")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

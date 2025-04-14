@@ -1,3 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using Artchive;
 
-Console.WriteLine("Hello, World!");
+const string input = "ABABABABAB";
+
+var compressed = Archivator.Compress(input);
+Console.WriteLine("Стиснено:");
+foreach (var (index, symbol) in compressed)
+{
+    Console.WriteLine($"({index},'{symbol.ToString()}')");
+}
