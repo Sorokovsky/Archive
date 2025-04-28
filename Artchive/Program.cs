@@ -1,10 +1,7 @@
 ﻿using Artchive;
 
-const string input = "ABABABABAB";
+var compressed = Archivator.Compress("Привіт");
+var decompressed = Archivator.Decompress(compressed);
 
-var compressed = Archivator.Compress(input);
-Console.WriteLine("Стиснено:");
-foreach (var (index, symbol) in compressed)
-{
-    Console.WriteLine($"({index},'{symbol.ToString()}')");
-}
+Console.WriteLine(string.Join(", ", compressed));
+Console.WriteLine(decompressed);
