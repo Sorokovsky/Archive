@@ -1,7 +1,10 @@
 ﻿using Artchive;
 
-var compressed = Archivator.Compress("Привіт");
+var text = "ABABABABAB";
+var data = System.Text.Encoding.ASCII.GetBytes(text);
+
+var compressed = Archivator.Compress(data);
 var decompressed = Archivator.Decompress(compressed);
 
-Console.WriteLine(string.Join(", ", compressed));
-Console.WriteLine(decompressed);
+var recoveredText = System.Text.Encoding.ASCII.GetString(decompressed);
+Console.WriteLine(recoveredText);

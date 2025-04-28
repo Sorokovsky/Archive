@@ -1,0 +1,15 @@
+/Users/andrijsorokovskij/Documents/2 cource/Crypto/Artchive/Artchive/bin/Debug/net8.0/Artchive
+/Users/andrijsorokovskij/Documents/2 cource/Crypto/Artchive/Artchive/bin/Debug/net8.0/Artchive.deps.json
+/Users/andrijsorokovskij/Documents/2 cource/Crypto/Artchive/Artchive/bin/Debug/net8.0/Artchive.runtimeconfig.json
+/Users/andrijsorokovskij/Documents/2 cource/Crypto/Artchive/Artchive/bin/Debug/net8.0/Artchive.dll
+/Users/andrijsorokovskij/Documents/2 cource/Crypto/Artchive/Artchive/bin/Debug/net8.0/Artchive.pdb
+/Users/andrijsorokovskij/Documents/2 cource/Crypto/Artchive/Artchive/obj/Debug/net8.0/Artchive.GeneratedMSBuildEditorConfig.editorconfig
+/Users/andrijsorokovskij/Documents/2 cource/Crypto/Artchive/Artchive/obj/Debug/net8.0/Artchive.AssemblyInfoInputs.cache
+/Users/andrijsorokovskij/Documents/2 cource/Crypto/Artchive/Artchive/obj/Debug/net8.0/Artchive.AssemblyInfo.cs
+/Users/andrijsorokovskij/Documents/2 cource/Crypto/Artchive/Artchive/obj/Debug/net8.0/Artchive.csproj.CoreCompileInputs.cache
+/Users/andrijsorokovskij/Documents/2 cource/Crypto/Artchive/Artchive/obj/Debug/net8.0/Artchive.sourcelink.json
+/Users/andrijsorokovskij/Documents/2 cource/Crypto/Artchive/Artchive/obj/Debug/net8.0/Artchive.dll
+/Users/andrijsorokovskij/Documents/2 cource/Crypto/Artchive/Artchive/obj/Debug/net8.0/refint/Artchive.dll
+/Users/andrijsorokovskij/Documents/2 cource/Crypto/Artchive/Artchive/obj/Debug/net8.0/Artchive.pdb
+/Users/andrijsorokovskij/Documents/2 cource/Crypto/Artchive/Artchive/obj/Debug/net8.0/Artchive.genruntimeconfig.cache
+/Users/andrijsorokovskij/Documents/2 cource/Crypto/Artchive/Artchive/obj/Debug/net8.0/ref/Artchive.dll
