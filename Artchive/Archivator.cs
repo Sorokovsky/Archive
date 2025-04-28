@@ -48,8 +48,7 @@ public static class Archivator
             else
             {
                 entry = new List<byte>(dictionary[prefix]);
-                if (symbol != 0)
-                    entry.Add(symbol);
+                if (symbol != 0) entry.Add(symbol);
             }
 
             dictionary[dictIndex++] = entry;
