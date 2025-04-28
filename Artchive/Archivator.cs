@@ -12,20 +12,18 @@ public static class Archivator
         foreach (var b in data)
         {
             current.Add(b);
-            var key = Convert.ToHexString(current.ToArray()); // Унікальний ключ для підрядка
-            if (!dictionary.ContainsKey(key))
-            {
-                var prefix = current.Count == 1 ? 0 : dictionary[Convert.ToHexString(current.GetRange(0, current.Count - 1).ToArray())];
-                result.Add((prefix, b));
-                dictionary[key] = dictIndex++;
-                current.Clear();
-            }
+            var key = Convert.ToHexString(current.ToArray());
+            if (dictionary.ContainsKey(key)) continue;
+            var prefix = current.Count == 1 ? 0 : dictionary[Convert.ToHexString(current.GetRange(0, current.Count - 1).ToArray())];
+            result.Add((prefix, b));
+            dictionary[key] = dictIndex++;
+            current.Clear();
         }
 
-        if (current.Count > 0)
+        if (current.Count <= 0) return ToByteArray(result);
         {
             var prefix = dictionary.ContainsKey(Convert.ToHexString(current.ToArray())) ? dictionary[Convert.ToHexString(current.ToArray())] : 0;
-            result.Add((prefix, 0)); // спецсимвол
+            result.Add((prefix, 0));
         }
 
         return ToByteArray(result);
@@ -45,7 +43,7 @@ public static class Archivator
 
             if (prefix == 0)
             {
-                entry = symbol == 0 ? new List<byte>() : new List<byte> { symbol };
+                entry = symbol == 0 ? [] : [symbol];
             }
             else
             {
@@ -64,12 +62,12 @@ public static class Archivator
     private static byte[] ToByteArray(List<(int, byte)> compressed)
     {
         var bytes = new byte[compressed.Count * 5];
-        int offset = 0;
+        var offset = 0;
 
         foreach (var (index, symbol) in compressed)
         {
-            BitConverter.GetBytes(index).CopyTo(bytes, offset); // 4 байти
-            bytes[offset + 4] = symbol; // 1 байт
+            BitConverter.GetBytes(index).CopyTo(bytes, offset);
+            bytes[offset + 4] = symbol;
             offset += 5;
         }
 
@@ -80,10 +78,10 @@ public static class Archivator
     {
         var result = new List<(int, byte)>();
 
-        for (int i = 0; i < data.Length; i += 5)
+        for (var i = 0; i < data.Length; i += 5)
         {
-            int index = BitConverter.ToInt32(data, i); 
-            byte symbol = data[i + 4];
+            var index = BitConverter.ToInt32(data, i); 
+            var symbol = data[i + 4];
             result.Add((index, symbol));
         }
 
